@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    ["transform-format-message", {
+      "generateId": "underscored_crc32",
+      "translations": "locales",
+      "inline": false
+    }],
+    ["extract-format-message", {
+      "generateId": "underscored_crc32",
+      "outFile": "./locales/en.js",
+      "format": "es6"
+    }]
+  ]
+}
